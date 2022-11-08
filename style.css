@@ -106,9 +106,21 @@
     transform: scale(1.5);
 }
 
+/* Exercise-10 */
 .ex-10-icon {
     font-size: 60px;
+    animation-name: spin;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
+
+@keyframes spin{
+  to{
+    transform: rotate(1turn);
+  }
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
