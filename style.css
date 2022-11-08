@@ -115,15 +115,32 @@
     animation-iteration-count: infinite;
 }
 
-@keyframes spin{
-  to{
+@keyframes spin {
+  to {
     transform: rotate(1turn);
   }
 }
 
-.ex-11-icon {
+/* Exercise-11 */
+.ex-11-icon{
     font-size: 60px;
 }
+
+.ex-11-icon:hover{
+    animation-name: slowlyspin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+
+@keyframes slowlyspin {
+    0% {
+        transform: rotate;
+    }
+    90% {
+        transform: rotate(300deg);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
