@@ -23,11 +23,18 @@
     width: 100%;
 }
 
+/* Exercise-3 */
 .ex-3-square {
     width: 100px;
     height: 100px;
     background: red;
+    transition: border-radius 2s;
 }
+
+.ex-3-square:hover{
+    border-radius: 100%;
+}
+
 .ex-4-square {
     width: 100px;
     height: 100px;
